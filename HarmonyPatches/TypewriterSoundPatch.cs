@@ -10,7 +10,7 @@ public class TypewriterSoundPatch
 {
     [HarmonyPrefix]
     [HarmonyPatch(typeof(TAnimSoundWriter), "OnCharacter")]
-    private static bool Prefix(AudioSource ___source, ref float ___latestTimePlayed)
+    private static bool Prefix()
     {
         return !SpeakerSwitchPatch.SuppressTyping;
     }
