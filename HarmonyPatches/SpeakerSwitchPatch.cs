@@ -20,6 +20,21 @@ public static class SpeakerSwitchPatch
     [HarmonyPrefix]
     public static void SecPrefix()
     {
+        // 只要是跟玩家对话就用普通语气
+        if (DialogUIManager.Instance.isSecMonologuePlaying)
+        {
+            PlayOnce("speech-entrant");
+            return;
+        }
+
+        // 抓卢时大气也不敢喘 可惜 pp 没有合适的音效，只能用普通语气代替
+        if (PlayerStore.Instance.currentClientInstance.GetClientBlueprint().identifier == "wanted5")
+        {
+            PlayOnce("speech-entrant");
+            return;
+        }
+
+        // 其他时候一概用抓人语气
         PlayOnce("speech-out");
     }
 
