@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <AssemblyName>PaperPleaseAudioReplacer</AssemblyName>
+        <RootNamespace>PaperPleaseAudioReplacer</RootNamespace>
+        <OutputPath>$(ModsPath)/PaperPleaseAudioReplacer</OutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\Assembly-CSharp.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.AudioModule.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.CoreModule.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\0Harmony.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\Unity.TextMeshPro.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.UI.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.UIModule.dll" Private="false"/>
+        <Reference Include="$(GamePath)\Probably Stolen_Data\Managed\UnityEngine.TextRenderingModule.dll" Private="false"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="manifest.xml" CopyToOutputDirectory="PreserveNewest"/>
+        <Content Include="Localization\*" CopyToOutputDirectory="PreserveNewest"/>
+        <Content Include="Sounds\*" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+</Project>
