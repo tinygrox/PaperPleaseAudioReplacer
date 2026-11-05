@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Manifest>
   <ID>tinygrox.PSMod.PaperPleaseAudioReplacer</ID>
-  <Name>Paper Please音效替换</Name>
+  <Name>Paper Please Audio Replacer</Name>
   <Author>tinygrox</Author>
   <ModVersion>1.1</ModVersion>
-  <Description>替换深空当铺的呼叫下一位、对话和呼叫治安部的音效为 Paper Please 的对应音效</Description>
+  <Description>Replaces the sounds for Calling the next customer, Calling Security for assistance, and dialogue with their Paper Please counterparts.\n替换深空当铺的呼叫下一位顾客、呼叫治安部请求协助和顾客对话的音效为 Paper Please 的音效</Description>
   <GameVersions>
     <Version>0.46</Version>
   </GameVersions>
