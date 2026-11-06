@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Manifest>
   <ID>tinygrox.PSMod.PaperPleaseAudioReplacer</ID>
-  <Name>Paper Please Audio Replacer</Name>
+  <Name>Probably Papers</Name>
   <Author>tinygrox</Author>
   <ModVersion>1.1</ModVersion>
   <Description>Replaces the sounds for Calling the next customer, Calling Security for assistance, and dialogue with their Paper Please counterparts.
